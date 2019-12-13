@@ -1,0 +1,27 @@
+"""
+将华氏温度转化为摄氏温度
+"""
+#1
+Farenhat=float(input('Farenhat='))
+sh=(Farenhat-32)/1.8
+print('%.1f华氏度=%.1f摄氏度'%(Farenhat,sh))
+
+#2
+f=float(input('f='))
+s=(f-32)/1.8
+print('%.1f华氏温度=(%.1f摄氏温度-32)/1.8)'%(s,f))
+
+"""
+通过半径计算直径和圆的面积
+"""
+r=float(input('r='))
+l=2*r
+s=3.14*(r**2)
+print('圆的半径:%d\n圆的面积:%.1f'%(l,s))
+
+"""
+判断是否为闰年
+"""
+year=int(input('请输入年份:'))
+is_leap=(year%4==0 and year%100!=0)or year%400==0
+print(is_leap)
